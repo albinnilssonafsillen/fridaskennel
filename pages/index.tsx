@@ -1,6 +1,16 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../components/UI/Header/Header";
+import styled from "styled-components";
+import { initMongo } from "../utils/Mongo/connection";
+
+const Info = styled.p`
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blueviolet;
+`;
 
 export default function Home() {
   return (
@@ -13,7 +23,20 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <h1>Ronjas Kennel</h1>
+        <Info>THIS IS THE P STYLED COMPONENTS</Info>
       </main>
     </div>
   );
 }
+
+// function getStaticProps() {
+//   const result = initMongo();
+
+//   console.log(result)
+
+//   return {
+//     props: {
+//       result
+//     }
+//   }
+// }
