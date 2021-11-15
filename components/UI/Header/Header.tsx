@@ -26,13 +26,13 @@ const Header = () => {
         </Link>
       </LinkStyled>
       <LinkStyled>
-        <Link href="/dogs">Hundarna</Link>
+        <Link href="/hundarna">Hundarna</Link>
       </LinkStyled>
       <LinkStyled>
-        <Link href="/aboutme">Om mig</Link>
+        <Link href="/om-mig">Om mig</Link>
       </LinkStyled>
       <LinkStyled>
-        <Link href="/contact">Kontakt</Link>
+        <Link href="/kontakt">Kontakt</Link>
       </LinkStyled>
     </HeaderContainer>
   );

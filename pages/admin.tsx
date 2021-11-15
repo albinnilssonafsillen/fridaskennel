@@ -2,9 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import icon from '../assets/icon/dog.svg'
 import Image from "next/image";
+import Router from 'next/router'
+import router from "next/router";
 
 function checkCorrectPwd() {
-    alert(`Här ska Frida kunna logga in till sin admin sida, QUEEN!`)
+    // alert(`Här ska Frida kunna logga in till sin admin sida, QUEEN!`)
+
+    router.push('/adminPage')
 }
 const admin = () => {
   return (

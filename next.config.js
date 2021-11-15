@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
     images: {
-      domains: ['media.istockphoto.com'],
+      domains: ['www.sveland.se']
     },
   }
 

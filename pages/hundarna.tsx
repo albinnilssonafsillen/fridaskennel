@@ -7,12 +7,11 @@ import Image from "next/image";
 const dummyDogArray = [
   {
     name: "Ronja",
-    imgUrl: "https://media.istockphoto.com/photos/happy-puppy-dog-smiling-on-isolated-yellow-background-picture-id1267466399?k=20&m=1267466399&s=612x612&w=0&h=er4M0jxDijF9_1Uli_W8gNhVV3dO08l7zRiYto_b9QI=",
+    imgUrl: 'https://www.sveland.se/globalassets/bilder/hund/dansksvenskteaser.jpg'
   },
   {
     name: "Iggy",
-    imgUrl: "https://media.istockphoto.com/photos/happy-puppy-dog-smiling-on-isolated-yellow-background-picture-id1267466399?k=20&m=1267466399&s=612x612&w=0&h=er4M0jxDijF9_1Uli_W8gNhVV3dO08l7zRiYto_b9QI=",
-
+    imgUrl: 'https://www.sveland.se/globalassets/bilder/hund/dansksvenskteaser.jpg'
   },
 ];
 const Dogs = () => {
@@ -24,7 +23,7 @@ const Dogs = () => {
         {dummyDogArray.map((dog) => (
           <>
             <DogName>{dog.name}</DogName>
-            <Image src={dog.imgUrl} width={144} height={144}/> 
+            <Image src={dog.imgUrl} width={256} height={144}  /> 
           </>
         ))}
       </DogWrapper>
@@ -34,11 +33,34 @@ const Dogs = () => {
 
 export default Dogs;
 
+// export async function getServerSideProps() {
+
+//   let res;
+//   try {
+//   const request = await fetch(`http://localhost:3000'/api/getDogs`,{
+//     method: 'GET'
+//   })
+
+//    res = await request.json()
+//   console.log(res)
+//   }
+//   catch(err) {
+//     console.error(err)
+//   }
+//   return {
+//     props: {
+//       res
+//     }
+//   }
+  
+// }
+
 const DogName = styled.div`
   font-weight: bold;
   line-height: 24px;
   font-size: 20px;
   color: purple;
+  padding:1rem 0;
 `;
 
 const DogWrapper = styled.div`
