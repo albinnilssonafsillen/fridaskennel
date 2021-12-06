@@ -7,11 +7,13 @@ import Image from "next/image";
 const dummyDogArray = [
   {
     name: "Ronja",
-    imgUrl: 'https://www.sveland.se/globalassets/bilder/hund/dansksvenskteaser.jpg'
+    imgUrl:
+      "https://www.sveland.se/globalassets/bilder/hund/dansksvenskteaser.jpg",
   },
   {
     name: "Iggy",
-    imgUrl: 'https://www.sveland.se/globalassets/bilder/hund/dansksvenskteaser.jpg'
+    imgUrl:
+      "https://www.sveland.se/globalassets/bilder/hund/dansksvenskteaser.jpg",
   },
 ];
 const Dogs = () => {
@@ -23,7 +25,7 @@ const Dogs = () => {
         {dummyDogArray.map((dog) => (
           <>
             <DogName>{dog.name}</DogName>
-            <Image src={dog.imgUrl} width={256} height={144}  /> 
+            <Image src={dog.imgUrl} width={256} height={144} />
           </>
         ))}
       </DogWrapper>
@@ -52,7 +54,7 @@ export default Dogs;
 //       res
 //     }
 //   }
-  
+
 // }
 
 const DogName = styled.div`
@@ -60,7 +62,7 @@ const DogName = styled.div`
   line-height: 24px;
   font-size: 20px;
   color: purple;
-  padding:1rem 0;
+  padding: 1rem 0;
 `;
 
 const DogWrapper = styled.div`
