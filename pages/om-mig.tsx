@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../components/UI/Header/Header";
-import styles from "../styles/Home.module.css";
+import { GlobalStyle } from "../styles/StyledComponents";
 
 
 
 const AboutMe = () => {
   return (
-    <div className={styles.container}>
+      <GlobalStyle>
       <Header />
       <h3>This is about me</h3>
-    </div>
+    </GlobalStyle>
   );
 };
 

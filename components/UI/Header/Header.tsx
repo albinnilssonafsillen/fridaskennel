@@ -15,8 +15,6 @@ const LinkStyled = styled.div`
   margin: 1rem;
   cursor: pointer;
 `
-
-
 const Header = () => {
   return (
     <HeaderContainer>

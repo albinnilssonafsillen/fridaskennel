@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../components/UI/Header/Header";
-import styles from "../styles/Home.module.css";
 import styled from "styled-components";
 import Image from "next/image";
+import {GlobalStyle} from '../styles/StyledComponents'
 
 const dummyDogArray = [
   {
@@ -18,7 +18,7 @@ const dummyDogArray = [
 ];
 const Dogs = () => {
   return (
-    <div className={styles.container}>
+      <GlobalStyle>
       <Header />
       <h3>This is dogs</h3>
       <DogWrapper>
@@ -29,7 +29,7 @@ const Dogs = () => {
           </>
         ))}
       </DogWrapper>
-    </div>
+    </GlobalStyle>
   );
 };
 
