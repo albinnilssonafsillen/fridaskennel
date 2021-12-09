@@ -61,10 +61,11 @@ const DogName = styled.div`
   font-weight: bold;
   line-height: 24px;
   font-size: 20px;
-  color: purple;
-  padding: 1rem 0;
+  padding: 1rem;
 `;
 
 const DogWrapper = styled.div`
-  color: blue;
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
 `;
