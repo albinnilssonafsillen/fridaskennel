@@ -13,9 +13,7 @@ const adminPage = (data) => {
 export default adminPage;
 
 export async function getServerSideProps() {
-    // call disabled to show the error
-    // const res = await initMongo()
-    const res = await fetch('https://swapi.dev/api/people/3/')
+    const res = await fetch('https://swapi.dev/api/people/6')
     const data = await res.json()
     return {
       props: 
