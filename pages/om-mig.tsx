@@ -8,7 +8,6 @@ const AboutMe = () => {
   return (
       <GlobalStyle>
       <Header />
-      <h3>This is about me</h3>
     </GlobalStyle>
   );
 };

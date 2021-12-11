@@ -1,9 +1,11 @@
+import { NextSeo } from "next-seo";
 import styled from "styled-components";
 
 
 function MyApp({ Component, pageProps }) {
   return(
   <HTML>
+    <NextSeo title="Ronjas Kennel" description="dansksvenska gårdshundar från Skåne"></NextSeo>
       <Component {...pageProps} />
   </HTML>
   )

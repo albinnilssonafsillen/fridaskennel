@@ -6,7 +6,6 @@ const Contact = () => {
   return (
     <GlobalStyle>
       <Header />
-      <h3>This is contact</h3>
     </GlobalStyle>
   );
 };
